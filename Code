@@ -1,0 +1,94 @@
+#Classification System
+print("Welcome To The Classification System Animal Idenitifer")
+from time import sleep
+sleep(2)
+answer = input("Is your animal a mammal, bird, insect or marine creature? ") 
+if answer.lower() == "mammal": 
+    print("Does it live in the sea?") 
+    answer = input() 
+    if answer.lower() == "yes": 
+        print("Is it really big? ") 
+        answer = input() 
+        if answer == "yes": 
+            print("Your animal is a whale!")
+        else:
+            print("Is your animal's predator a polar bear?")
+            answer = input()
+            if answer.lower() == "yes":
+                print("Your animal is a seal!")
+            else:
+                print("Your animal is a dolphin!")
+    else: 
+        print ("Is it a pet?") 
+        answer = input() 
+        if answer == "yes": 
+            print("Does it bark?") 
+            answer = input() 
+            if answer == "yes": 
+                print("Your animal is a dog!") 
+            else: 
+                print("Your animal is a cat!") 
+        else:
+            print("Does it live in the farm?") 
+            answer = input() 
+            if answer == "yes": 
+                print("Does it produce milk?") 
+                answer = input() 
+                if answer == "yes": 
+                    print("Your animal is a cow!") 
+                else:
+                    print("Does your animal produce wool?") 
+                    answer = input() 
+                    if answer == "yes":
+                        print("Your animal is a sheep!") 
+                    else: 
+                        print("Your animal is a horse!")
+            else:
+                print("Does it live in the wild?")
+                answer = input()
+                if answer == "yes":
+                    print("Does it have black stripes?")
+                    answer = input()
+                    if answer == "yes":
+                        print("Your animal is a tiger!")
+                    else:
+                        print("Your animal is a lion!")
+else:
+   if answer.lower() == "bird":
+    print("Can it run fast?")
+    answer = input()
+    if answer == "yes":
+        print("Your animal is an ostrich!")
+    else:
+        print("Can it fly?")
+        answer = input()
+        if answer == "yes":
+            print("Your animal is a sparrow!")
+        else:
+            print("Your animal is a penguin!")
+
+if answer.lower() == "insect":
+    print("Is it black and yellow?")
+    answer = input()
+    if answer == "yes":
+        print("Does it make honey?")
+        answer = input()
+        if answer == "yes":
+            print("Your animal is a bee!")
+        else:
+            print("Your animal is a wasp!")
+    else:
+        print("Do they live in colonies?")
+        answer = input()
+        if answer == "yes":
+            print("Your animal is an ant!")
+        else:
+            print("Your animal is a termite!")
+else:
+    if answer.lower() == "marine creature":
+        print("Does it have eight legs?")
+        answer = input()
+        if answer == "yes":
+            print("Your animal is an octopus!")
+        else:
+            print("Your animal is a squid!")
